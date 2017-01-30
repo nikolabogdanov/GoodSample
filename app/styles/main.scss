@@ -1,0 +1,247 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.main-header {
+  //margin: 0;
+  //height: 40px;
+  //min-height: 0;
+  //
+  //.navbar-nav > li > a {
+  //  padding-top: 0;
+  //  padding-bottom: 0;
+  //}
+  //
+  //.container {
+  //  min-height: 0;
+  //}
+
+  .navbar-nav > li > a, .navbar-brand {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  .navbar-nav > li > a {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  .navbar {
+    min-height:32px;
+    height: 32px;
+    margin-bottom: 0;
+  }
+
+  .navbar-brand > img {
+    width: 32px;
+  }
+}
+
+.subheader.navbar {
+  margin-bottom: 0;
+}
+
+//.container-fluid {
+//  padding-left: 10px;
+//  padding-right: 10px;
+//}
+
+
+/* Sticky footer styles START
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+/* Sticky footer styles END
+-------------------------------------------------- */
+
+.round-box {
+  background-color: rgba(86, 175, 227, 0);
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-style: solid solid solid solid;
+  border-radius: 28px;
+  width: 16%;
+  height: 72px;
+  float: left;
+}
+
+.faq-header{
+  line-height: 1.1;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.faq-textbox {
+  width: 80%;
+  float: right;
+}
+
+.note-icon {
+  top: 10px;
+  left: 27px;
+  visibility: visible;
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  background: url("../images/note.png");
+  background-size: cover;
+  position: absolute;
+}
+.faq-button {
+  padding-top: 15px;
+}
+.faq{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.faq-area {
+  padding-bottom: 60px;
+}
+
+
+.faq-button > a {
+  background-color: rgb(84, 191, 63);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 3px;
+}
+//.navbar-nav > li > a {
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* line-height: 20px; */
+//}
+
+//.browsehappy {
+//  margin: 0.2em 0;
+//  background: #ccc;
+//  color: #000;
+//  padding: 0.2em 0;
+//}
+//
+//body {
+//  padding: 0;
+//}
+//
+///* Everything but the jumbotron gets side spacing for mobile first views */
+//.header,
+//.marketing,
+//.footer {
+//  padding-left: 15px;
+//  padding-right: 15px;
+//}
+//
+///* Custom page header */
+//.header {
+//  border-bottom: 1px solid #e5e5e5;
+//  margin-bottom: 10px;
+//
+//  /* Make the masthead heading the same height as the navigation */
+//  h3 {
+//    margin-top: 0;
+//    margin-bottom: 0;
+//    line-height: 40px;
+//    padding-bottom: 19px;
+//  }
+//}
+//
+///* Custom page footer */
+//.footer {
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
+//  /* Set the fixed height of the footer here */
+//  height: 60px;
+//  background-color: #f5f5f5;
+//}
+//
+//.container-narrow > hr {
+//  margin: 30px 0;
+//}
+//
+///* Main marketing message and sign up button */
+//.jumbotron {
+//  text-align: center;
+//  border-bottom: 1px solid #e5e5e5;
+//
+//  .btn {
+//    font-size: 21px;
+//    padding: 14px 24px;
+//  }
+//}
+//
+///* Supporting marketing content */
+//.marketing {
+//  margin: 40px 0;
+//
+//  p + h4 {
+//    margin-top: 28px;
+//  }
+//}
+//
+///* Responsive: Portrait tablets and up */
+//@media screen and (min-width: 768px) {
+//  .container {
+// //   max-width: 730px;
+//  }
+//
+//  /* Remove the padding we set earlier */
+//  .header,
+//  .marketing,
+//  .footer {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//  /* Space out the masthead */
+//  .header {
+//    margin-bottom: 30px;
+//  }
+//  /* Remove the bottom border on the jumbotron for visual effect */
+//  .jumbotron {
+//    border-bottom: 0;
+//  }
+//}
