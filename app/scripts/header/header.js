@@ -7,8 +7,10 @@ headerModule.directive('header', function () {
     replace: true,
     scope: {user: '='}, // This is one of the cool things :). Will be explained in post.
     templateUrl: "scripts/header/header.html",
-    controller: ['$scope', '$filter', function ($scope, $filter) {
-      // Your behaviour goes here :)
+    controller: ['$scope', '$filter', '$translate', function ($scope, $filter, $translate) {
+      $scope.changeLanguage = function(key) {
+        $translate.use(key);
+      }
     }]
   };
 });

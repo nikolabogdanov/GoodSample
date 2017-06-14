@@ -19,7 +19,8 @@ angular
     'app.home',
     'app.header',
     'app.footer',
-    'app.view1'
+    'app.view1',
+    'pascalprecht.translate'
   ])
   // .directive('header', function () {
   //   return {
@@ -42,7 +43,7 @@ angular
   //     }]
   //   }
   // })
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $translateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'scripts/home/home.html',
@@ -62,4 +63,13 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+    $translateProvider.fallbackLanguage('en');
+    $translateProvider.registerAvailableLanguageKeys(['en', 'bg']);
+    $translateProvider.useSanitizeValueStrategy('escape');
+    $translateProvider.preferredLanguage('en');
+    $translateProvider.useStaticFilesLoader({
+      prefix: 'lang-',
+      suffix: '.json'
+    });
   });

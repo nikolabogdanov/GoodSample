@@ -3,7 +3,7 @@
 var homeModule = angular.module('app.home', []);
 
 homeModule
-  .controller('homeController', function ($scope, customerService) {
+  .controller('homeController', function ($scope, customerService, $translate) {
 
     console.log('ma faka');
 
@@ -19,7 +19,6 @@ homeModule
     $scope.customers = [];
 
     init();
-
   });
 
 homeModule.factory('customerFactory', function () {
